@@ -1,0 +1,24 @@
+{
+  "name": "Unlike facebook page",
+  "description": "Unlike facebook pages.",
+  "author": "NoobPro @https://github.com/ICodeWithMyhand/FacebookPagesUnlikerChromeExtension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "scripting"
+  ],
+  "action": {
+    
+  },
+  "host_permissions": [
+    "https://www.facebook.com/*"
+  ],
+  "icons": {
+    "16": "/icons/icon16.png",
+    "32": "/icons/icon32.png",
+    "128": "/icons/icon128.png"
+  }
+}
