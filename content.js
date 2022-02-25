@@ -8,10 +8,8 @@ let dayWrappers = Array.from(container.children)
 
 function injectBtn() {
     const btn = document.createElement('button')
-    btn.style = `
+    let btnStyle = `
         position: fixed;
-        float: right;
-        right: 0px;
         background: #1877f2;
         color: #fff;
         font-size: 25px;
@@ -20,6 +18,13 @@ function injectBtn() {
         cursor: pointer;
         padding: 5px;
         z-index: 9999;`
+
+    // check the language of the fb account and set button position accordingly
+    const direction = document.querySelector('#facebook').getAttribute('dir')
+    if (direction == "rtl") btnStyle += "left: 0;"
+    else btnStyle += "right: 0;"
+
+    btn.style = btnStyle
     btn.id = "unlike-all"
     btn.innerText = "Start Scrolling"
     btn.addEventListener('click', startScroll)
