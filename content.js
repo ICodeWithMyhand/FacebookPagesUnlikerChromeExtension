@@ -3,8 +3,8 @@ let interval = 3 * 5;
 let scrollerID;
 let state = "idel"
 
-const container = document.querySelector('.d46ut3hm')
-const dayWrappers = Array.from(container.children)
+let container = document.querySelector('.d46ut3hm')
+let dayWrappers = Array.from(container.children)
 
 function injectBtn() {
     const btn = document.createElement('button')
@@ -64,7 +64,10 @@ function changeListener() {
 
 async function unlike() {
     console.log("unliking called")
-
+    // get all dayWrappers after scrolling is done
+    container = document.querySelector('.d46ut3hm')
+    dayWrappers = Array.from(container.children)
+    
     const btn = document.getElementById("unlike-all")
     btn.setAttribute('disabled', true)
     btn.style.background = "#c1c1c1"
