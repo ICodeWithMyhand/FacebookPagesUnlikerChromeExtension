@@ -9,5 +9,5 @@ This extension un-likes all Facebook pages, it is developed in response to the d
 # How to use
 - Navigate to Facebook => arrow on top right => Settings & Privacy => Activity Log => Connections from side menu => Pages, page likes and interests from sub-menu
 - (Optional) Open up your browser console to monitor progress
-- Click on the extension icon and click `Start Scrolling`, the script will scroll until the end of your pages.
+- Click on the extension icon and click `Start Scrolling`, the script will scroll until the end of your pages (Or click `Stop Scrolling` prematurely if you have too many liked pages for your device to handle rendering).
 - Click `Start Unliking` and let the script do it's thing.
